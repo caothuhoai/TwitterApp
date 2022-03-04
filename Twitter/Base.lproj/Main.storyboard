@@ -17,17 +17,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIL-KB-ziQ">
-                                <rect key="frame" x="104.5" y="305.5" width="166" height="56"/>
-                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIL-KB-ziQ">
+                                <rect key="frame" x="30" y="305" width="314" height="56"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="166" id="E4g-cR-J4z"/>
                                     <constraint firstAttribute="height" constant="56" id="WVG-x3-Xyl"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="systemGray5Color"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Login" titleAlignment="center">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
+                                <buttonConfiguration key="configuration" style="plain" titleAlignment="center">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Login with Twitter">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Georgia"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="onLoginButton:" destination="qsa-sh-x3v" eventType="touchUpInside" id="Tnq-b0-Pv4"/>
@@ -38,7 +44,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="XIL-KB-ziQ" firstAttribute="centerX" secondItem="wEf-g3-7aV" secondAttribute="centerX" id="27X-kL-gpB"/>
+                            <constraint firstItem="XIL-KB-ziQ" firstAttribute="leading" secondItem="vOA-tb-CN8" secondAttribute="leading" id="8Du-Bf-vEa"/>
                             <constraint firstItem="XIL-KB-ziQ" firstAttribute="centerY" secondItem="wEf-g3-7aV" secondAttribute="centerY" id="a9P-os-i2D"/>
+                            <constraint firstItem="vOA-tb-CN8" firstAttribute="trailing" secondItem="XIL-KB-ziQ" secondAttribute="trailing" id="m33-Xd-ayw"/>
+                            <constraint firstItem="vOA-tb-CN8" firstAttribute="bottom" secondItem="XIL-KB-ziQ" secondAttribute="bottom" id="qrp-lo-RfF"/>
+                            <constraint firstItem="XIL-KB-ziQ" firstAttribute="top" secondItem="vOA-tb-CN8" secondAttribute="top" id="yPz-dh-dxd"/>
                         </constraints>
                     </view>
                     <connections>
@@ -47,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvi-g8-XuB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="145" y="249"/>
+            <point key="canvasLocation" x="144.80000000000001" y="248.72563718140933"/>
         </scene>
         <!--Home-->
         <scene sceneID="W1W-Ke-zQK">
@@ -164,9 +174,6 @@
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
