@@ -28,6 +28,8 @@ Here's a walkthrough of implemented user stories:
 
 ---
 
+# Twitter - Part I
+
 **TwitterApp** is a basic twitter app to read your tweets.
 
 Time spent: **6** hours spent in total
